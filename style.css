@@ -1,12 +1,12 @@
-  *{
+  /*{
       margin: 0%;
   }
   
   .navbar {
     margin: 0;
     padding: 0;
-    width: 150px;
-    background-color:#035e0f;
+    width: 200px;
+    background-color:#2a9d8f;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -14,36 +14,88 @@
   
   .navbar a {
     display: block;
-    color: rgb(248, 248, 244);
-    padding: 16px;
+    color: white;
+    padding: 15px;
     text-decoration: none;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
    
-  
-  .navbar a:hover:not(.active) {
-    background-color: rgb(85, 85, 85);
-    color: white;
+  .navbar a:hover{
+    background-color:#e9c46a;
+    color: rgb(12, 8, 8);
   }
   
   div.content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
+    height: 50px;
+    background-color: rgb(189, 203, 226);
   }
   
+
+
+
+
   @media screen and (max-width: 700px) {
-    .sidebar {
+    .navbar {
       width: 100%;
       height: auto;
       position: relative;
+      font-size: 5px;
     }
-    .sidebar a {float: left;}
+
+    .navbar a {float: left;}
     div.content {margin-left: 0;}
   }
   
   @media screen and (max-width: 400px) {
-    .sidebar a {
+    .navbar a {
       text-align: center;
       float: none;
+      font-size: 5px;
     }
   }
+
+*/
+body,html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+.tablink {
+  background-color: #005f73;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #bb3e03;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {
+  background-color: #0a9396;
+}
+#News {
+  background-color: #ee9b00;
+}
+#Contact {
+  background-color: #001219;
+}
+#About {
+  background-color: #9b2226;
+}

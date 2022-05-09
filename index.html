@@ -10,34 +10,85 @@
     </head>
 
     <body>
-        <!--header-->
-        <div class="header">
-            <div>
-                <div class="navbar">
-                    <a href="#home">Home</a>
-                    <a href="about.html">What this is</a>
-                    <a href="news.html">Whats'up </a>
-                    <a href="idears.html">Idears</a>
-                    <a href="links.html">Check this out</a>
-                  </div>
-                  
-            </div>
-        </div>
-        <!--body-->
+        <!--
         <div class="content">
-            <div>
-
-            </div>
+            <h3>Welcome to Wonder Land</h3>
+            <span>A place filled with great Imaginations</span>
         </div>
-        <!--footer-->
-        <div class="footer">
-            <div>
-
-            </div>
-        </div>
-
-
-
-
-    </body>
-</html>
+        
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="about.html">What this is</a>
+        <a href="news.html">Whats'up </a>
+        <a href="idears.html">Idears</a>
+        <a href="links.html">Check this out</a>
+      </div>
+    -->
+      
+      <button class="tablink" onclick="openPage('Home', this, '#0a9396')">Home</button>
+      <button class="tablink" onclick="openPage('News', this, '#ee9b00')" id="defaultOpen">News</button>
+      <button class="tablink" onclick="openPage('Contact', this, '#001219')">Contact</button>
+      <button class="tablink" onclick="openPage('About', this, '#9b2226')">About</button>
+      
+      <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home is where the heart is.   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros orci, pellentesque et scelerisque a, varius in leo. Vivamus volutpat mi massa, quis aliquam sem cursus ac. Donec ut luctus eros. Sed laoreet, lacus et commodo molestie, ante nulla lobortis turpis, in gravida augue nisi at magna. Nam laoreet ante vel tellus tempus luctus. Etiam pellentesque dictum dolor quis fermentum. Donec vitae nibh scelerisque, facilisis elit lacinia, aliquet dolor. Mauris malesuada finibus sem, et dictum nisi pulvinar sit amet. Suspendisse sapien nisi, tristique ut varius eu, imperdiet at leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris a porta tellus, laoreet sodales nibh. Ut a lectus eu lacus tincidunt sagittis et id diam.
+                
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla aliquam finibus. Nam elit magna, cursus aliquam mattis at, tempor non lorem. Vestibulum aliquet vel erat eu condimentum. Sed vel maximus mauris, quis dictum elit. Praesent ornare gravida justo, at cursus ante bibendum ac. Ut blandit blandit tellus et aliquam. Morbi facilisis, sem ut vestibulum hendrerit, ex ante fringilla enim, vulputate efficitur lorem est vestibulum turpis.
+            
+            Proin non cursus turpis, ac congue tellus. .</p>
+      </div>
+      
+      <div id="News" class="tabcontent">
+        <h3>News</h3>
+        <p>Some news this fine day!
+            <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros orci, pellentesque et scelerisque a, varius in leo. Vivamus volutpat mi massa, quis aliquam sem cursus ac. Donec ut luctus eros. Sed laoreet, lacus et commodo molestie, ante nulla lobortis turpis, in gravida augue nisi at magna. Nam laoreet ante vel tellus tempus luctus. Etiam pellentesque dictum dolor quis fermentum. Donec vitae nibh scelerisque, facilisis elit lacinia, aliquet dolor. Mauris malesuada finibus sem, et dictum nisi pulvinar sit amet. Suspendisse sapien nisi, tristique ut varius eu, imperdiet at leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris a porta tellus, laoreet sodales nibh. Ut a lectus eu lacus tincidunt sagittis et id diam.
+                
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla aliquam finibus. Nam elit magna, cursus aliquam mattis at, tempor non lorem. Vestibulum aliquet vel erat eu condimentum. Sed vel maximus mauris, quis dictum elit. Praesent ornare gravida justo, at cursus ante bibendum ac. Ut blandit blandit tellus et aliquam. Morbi facilisis, sem ut vestibulum hendrerit, ex ante fringilla enim, vulputate efficitur lorem est vestibulum turpis.
+            
+            Proin non cursus turpis, ac congue tellus. 
+        </p> 
+      </div>
+      
+      <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros orci, pellentesque et scelerisque a, varius in leo. Vivamus volutpat mi massa, quis aliquam sem cursus ac. Donec ut luctus eros. Sed laoreet, lacus et commodo molestie, ante nulla lobortis turpis, in gravida augue nisi at magna. Nam laoreet ante vel tellus tempus luctus. Etiam pellentesque dictum dolor quis fermentum. Donec vitae nibh scelerisque, facilisis elit lacinia, aliquet dolor. Mauris malesuada finibus sem, et dictum nisi pulvinar sit amet. Suspendisse sapien nisi, tristique ut varius eu, imperdiet at leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris a porta tellus, laoreet sodales nibh. Ut a lectus eu lacus tincidunt sagittis et id diam.
+                
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla aliquam finibus. Nam elit magna, cursus aliquam mattis at, tempor non lorem. Vestibulum aliquet vel erat eu condimentum. Sed vel maximus mauris, quis dictum elit. Praesent ornare gravida justo, at cursus ante bibendum ac. Ut blandit blandit tellus et aliquam. Morbi facilisis, sem ut vestibulum hendrerit, ex ante fringilla enim, vulputate efficitur lorem est vestibulum turpis.
+            
+            Proin non cursus turpis, ac congue tellus. 
+        </p>
+      </div>
+      
+      <div id="About" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.<br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros orci, pellentesque et scelerisque a, varius in leo. Vivamus volutpat mi massa, quis aliquam sem cursus ac. Donec ut luctus eros. Sed laoreet, lacus et commodo molestie, ante nulla lobortis turpis, in gravida augue nisi at magna. Nam laoreet ante vel tellus tempus luctus. Etiam pellentesque dictum dolor quis fermentum. Donec vitae nibh scelerisque, facilisis elit lacinia, aliquet dolor. Mauris malesuada finibus sem, et dictum nisi pulvinar sit amet. Suspendisse sapien nisi, tristique ut varius eu, imperdiet at leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris a porta tellus, laoreet sodales nibh. Ut a lectus eu lacus tincidunt sagittis et id diam.
+                
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla aliquam finibus. Nam elit magna, cursus aliquam mattis at, tempor non lorem. Vestibulum aliquet vel erat eu condimentum. Sed vel maximus mauris, quis dictum elit. Praesent ornare gravida justo, at cursus ante bibendum ac. Ut blandit blandit tellus et aliquam. Morbi facilisis, sem ut vestibulum hendrerit, ex ante fringilla enim, vulputate efficitur lorem est vestibulum turpis.
+            
+            Proin non cursus turpis, ac congue tellus. </p>
+      </div>
+      
+      <script>
+      function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+         
+      </body>
+      </html> 
+      
